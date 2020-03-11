@@ -35,7 +35,7 @@ vagrant ssh vault-dev ;
 vagrant@vault-dev:~$ \
 ./vault_run_examples.sh ;
 # ...
-# // envconsul invoking vault_example.sh inline after retried values & then
+# // envconsul invoking vault_example.sh inline after retrieved values & then
 # // consul-template is invoked to generate vault_example_file.sh thats then executed.
 
 # when done remove eg: vagrant destroy -f vault-dev && vagrant box remove -f debian/buster64 ;
