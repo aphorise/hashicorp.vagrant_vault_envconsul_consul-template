@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -eu ; # abort this script when a command fails or an unset variable is used.
+#set -x ; # echo all the executed commands.
+
+printf "______________ STARTED: ${0##*/}\n" ;
+KEY='{{ with secret "kv/key?version=1" }}{{ .Data.data.value }}{{ end }}'
+USER='{{ with secret "kv/user?version=1" }}{{ .Data.data.value }}{{ end }}'
+SECRET='{{ with secret "kv/secret?version=1" }}{{ .Data.data.value }}{{ end }}'
+printf "Varibles populated and set in ${0##*/}:
+KEY === ${KEY}
+USER === ${USER}
+SECRET === ${SECRET}
+" ;
+printf "--------------- END OF: ${0##*/}\n\n" ;
