@@ -10,7 +10,7 @@ The concepts herein are drawn from the [Vault Direct Application Integration gui
 
 A vault server (hostname: vault-dev - in dev mode) instance is minimally configured with key-value (kv) secrets engine (kv2) enabled at the path of 'kv/'.
 
-Example values are written to the paths below and then later retried for passing to `vault_app.sh` via **`envconsul`** and populating `vault_app.conf` via **`consul-template`**.
+Example values are written to a few below and then retrieved after for passing to `vault_example_app.sh` via **`envconsul`** and populating `vault_example_file.sh` via **`consul-template`**.
 
 
 ### Prerequisites
